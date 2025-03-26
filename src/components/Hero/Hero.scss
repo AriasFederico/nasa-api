@@ -1,0 +1,22 @@
+.Hero {
+    min-height: 70vh;
+    background-image:url(../../../public/assets/homeEarth.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 1rem 2rem;
+
+&-h1 {
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: white;
+}
+
+}
+
+
+

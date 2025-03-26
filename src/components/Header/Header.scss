@@ -1,0 +1,40 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.Header {
+    position: absolute;
+    padding: 2rem 1rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+
+    &-mobile {
+        @include respond-to('large'){
+            display: none;
+        }
+    }
+
+    &-li {
+        align-self: center;
+    }
+
+    &-link {
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    &-nav-mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 4rem;
+        padding: 2.3rem .5rem;
+        position: absolute;
+        top: 6rem;
+        right: 0;
+        background-color: map-get($colors, 'charcoal-gray');    
+    }
+}
