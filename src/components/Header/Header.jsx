@@ -8,7 +8,8 @@ import { Cross } from '../Icons/cross/Cross';
 
 export const Header = () => {
 	const { activeNav, handleNav } = useActiveNav();
-	const { header } = useContext(GlobalContext);
+	const { bbdd } = useContext(GlobalContext);
+	const { header } = bbdd;
 	const { menu } = header;
 	return (
 		<header className='Header'>

@@ -1,5 +1,10 @@
 import './ApodContent.scss';
-export const ApodContent = ({ data }) => {
+import { useContext } from 'react';
+import { GlobalContext } from '../../../../../context/GlobalContext';
+
+export const ApodContent = () => {
+	const { apod } = useContext(GlobalContext);
+	const { data } = apod;
 	return (
 		<div className='Apod-content'>
 			<figure className='Apod-content-figure'>

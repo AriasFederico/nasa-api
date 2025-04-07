@@ -19,6 +19,7 @@ export const useFetch = (url) => {
 
 				try {
 					const responseJson = JSON.parse(text);
+					console.log(responseJson);
 					setData(responseJson);
 				} catch (error) {
 					throw new Error('La respuesta no es JSON válido');

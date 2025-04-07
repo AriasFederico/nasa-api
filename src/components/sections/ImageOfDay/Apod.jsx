@@ -2,11 +2,15 @@ import './Apod.scss';
 import { SectionTitle } from '../../SectionTitle/SectionTitle';
 import { ApodContent } from './components/content/ApodContent';
 import { ApodSkeleton } from './components/skeleton/ApodSkeleton';
-export const Apod = ({ data }) => {
+import { GlobalContext } from '../../../context/GlobalContext';
+import { useContext } from 'react';
+export const Apod = () => {
+	const { apod } = useContext(GlobalContext);
+	const { data } = apod;
 	return (
 		<section className='Apod'>
 			<SectionTitle value={'Image of the Day: A Glimpse of the Universe'} />
-			{data ? <ApodContent data={data} /> : <ApodSkeleton />}
+			{data ? <ApodContent /> : <ApodSkeleton />}
 		</section>
 	);
 };

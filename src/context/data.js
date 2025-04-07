@@ -11,4 +11,8 @@ export const bbdd = {
 	hero: {
 		h1: ['IMAGES THAT INSPIRE, SCIENCE THAT SURPRISES'],
 	},
+
+	library: {
+		h2: ['Discover'],
+	},
 };
